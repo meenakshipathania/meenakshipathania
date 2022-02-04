@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Plan a Vaccations</title>
+</head>
+
+<body>
+  <div class="mainmal">
+    <i style="color: rgb(0, 198, 132);" class="fa fa-flag" aria-hidden="true"></i> Lightning deals exclusively for you.
+    Book your trip to Maldives at the cheapest price!
+  </div>
+  <div class="pocky">
+    <img style="width:180px" src="https://pyt-images.imgix.net/images/web_app/logo/pickyourtrail-logo-white.svg">
+    <div class="pocky1">
+      <div class="common guide">
+        <div class="subguide">Guides</div>
+      </div>
+      <div class="common blog">
+        <div class="subguide">Blog</div>
+      </div>
+      <div class="common blog">
+        <div class="subguide">About Us</div>
+      </div>
+      <div class="common blog imgshow">
+        <a style="color:white" href="#" data-toggle="dropdown" id="lang">
+          <svg width="1em" height="1em" viewBox="0 0 24 24" fill="white">
+            <path fill-rule="evenodd"
+              d="M11.132 4.432c.35-.333.641-.432.868-.432.227 0 .518.1.868.432.354.337.719.872 1.047 1.61.561 1.263.958 2.991 1.06 4.958h-5.95c.102-1.967.499-3.695 1.06-4.958.328-.738.693-1.273 1.047-1.61zM7.023 11c.103-2.204.545-4.218 1.235-5.77.06-.136.123-.269.188-.399A8.007 8.007 0 004.062 11h2.961zm-2.961 2h2.961c.103 2.204.545 4.218 1.235 5.77.06.136.123.269.188.399A8.006 8.006 0 014.062 13zm4.964 0h5.948c-.101 1.966-.498 3.695-1.06 4.958-.327.738-.692 1.273-1.046 1.61-.35.333-.641.432-.868.432-.227 0-.518-.1-.868-.432-.354-.337-.719-.872-1.047-1.61-.561-1.263-.958-2.991-1.06-4.958zm7.95 0c-.102 2.204-.544 4.218-1.234 5.77-.06.136-.123.269-.188.399A8.006 8.006 0 0019.938 13h-2.961zm2.962-2a8.006 8.006 0 00-4.384-6.169c.065.13.128.263.188.399.69 1.552 1.132 3.566 1.235 5.77h2.961zM22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"
+              clip-rule="evenodd"></path>
+          </svg></a>
+        <ul class="ul_list">
+          <li class="list"><a href="#" class="list_link">IN-India</a></li>
+          <li class="list"><a href="#" class="list_link">AE-United Arab Emirates</a></li>
+          <li class="list"><a href="#" class="list_link">US-United States</a></li>
+        </ul>
+      </div>
+      <div class="common blog imgshow">
+        <a href="#" data-toggle="dropdown">
+          <svg width="1em" height="1em" viewBox="0 0 24 24" fill="white">
+            <path fill-rule="evenodd"
+              d="M5 11a1 1 0 100 2 1 1 0 000-2zm3 1a3 3 0 11-6 0 3 3 0 016 0zm4-1a1 1 0 100 2 1 1 0 000-2zm3 1a3 3 0 11-6 0 3 3 0 016 0zm4-1a1 1 0 100 2 1 1 0 000-2zm3 1a3 3 0 11-6 0 3 3 0 016 0z"
+              clip-rule="evenodd"></path>
+          </svg></a>
+        <ul class="ul_list">
+          <li class="list"><a href="#" class="list_link">Testimonials</a></li>
+          <li class="list"><a href="#" class="list_link">Visa</a></li>
+          <li class="list"><a href="#" class="list_link">FAQ</a></li>
+          <li class="list"><a href="#" class="list_link">Contact US</a></li>
+        </ul>
+      </div>
+      <div class="common blog">
+        <div class="subguide">
+          <button type="button"
+            style="background: transparent; border:1px solid white; color: white; border-radius: 7px; width: 80px"
+            class="btn" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="bann_video">
+    <div class="maldi_viedo">
+      <video width="320" height="240" autoplay muted loop>
+        <source src="https://d3lf10b5gahyby.cloudfront.net/web_app/speed-boat/video/mle_video_desktop.mp4"
+          type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="form_container">
+      <h1 class="title">Book your dream trip to Maldives</h1>
+      <div class="container">
+        <section class="sec">
+          <form class="form_class" style="margin-left:0px;">
+            <div class="under_form">
+              <div class="iconclass">
+                <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                <input type="text" placeholder="Depature City" readonly class="input_class" id="selectCity"
+                  value="Channai-IN">
+                <label>Depature City</label>
+              </div>
+              <div class="city_dropdown hide">
+                <div class="city_drop">
+                  <div class="input_tag">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="city_input" placeholder="Select City">
+                  </div>
+                  <ul class="city_list ">
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">MAA</span>Chennai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BLR</span>Bengaluru, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BOM</span>Mumbai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CCU</span>Kolkata, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">HYD</span>Hyderabad, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">DEL</span>Delhi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">TRV</span>Trivandrum, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">NAG</span>Nagpur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">JAI</span>Jaipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CJB</span>Coimbatore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">COK</span>Kochi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">TRZ</span>Trichy, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">AMD</span>Ahmedabad, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">ATQ</span>Amritsar, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">LKO</span>Lucknow, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BBI</span>Bhubaneshwar, IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">PNQ</span>Pune, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXM</span>Madurai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">VNS</span>Varanasi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Goa, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXC</span>Chandigarh, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BDQ</span>Vadodara, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GAU</span>Guwahati, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">VTZ</span>Visakhapatnam, IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXU</span>Aurangabad , IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXE</span>Mangalore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IDR</span>Indore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">UDR</span>Udaipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXR</span>Ranchi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CCJ</span>Kozhikode , IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">RPR</span>Raipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">PAT</span>Patna, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">JDH</span>Jodhpur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BKB</span>Bikaner, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">MYQ</span>Mysore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Quepem, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Chimbel, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">DED</span>Dehradun, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">KUU</span>Kullu, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXZ</span>Port Blair, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXL</span>Leh, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">SXR</span>Srinagar, IN</li>
+                  </ul>
+                  <div class="city_button">
+                    <button class="button1">I’m departing from Outside India</button>
+                    <button class="button1">I have booked my flight already</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="iconclass1" style="min-width: 169px;">
+              <!-- <i class="fa fa-calendar-minus-o" aria-hidden="true"></i> -->
+              <input style="width:200px;"placeholder="Depature Date" type="date" class="input_class" value="2022-01-20">
+              <label style="left: 260px;">Depature Date</label>
+            </div>
+            <div class="iconclass1">
+              <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+              <input placeholder="Duration of Stay" class="input_class" id="stay_city" value="4 Nights">
+              <label style="left: 460px;">Duration of Stay</label>
+            </div>
+            <div class="stay_dropdown hide">
+              <ul>
+                <li class="nights" onclick="setNights(event)">1 Night</li>
+                <li class="nights" onclick="setNights(event)">2 Night</li>
+                <li class="nights" onclick="setNights(event)">3 Night</li>
+                <li class="nights" onclick="setNights(event)">4 Night<span class="right_text">
+                    <i style="color: rgb(0, 198, 132);" class="fa fa-flag" aria-hidden="true"></i>
+                    Ideal for Maldives
+                  </span></li>
+                <li class="nights">
+                  <i class="fa fa-minus minu" onclick="decreaseNight(event)" id="decrease" aria-hidden="true"></i>
+                  <input value="4" id="nights_incre" class="input_in">
+                  <i class="fa fa-plus minu" onclick="increaseNight(event)" id="increase" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="iconclass1">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              <input placeholder="Traveller Details" class="input_class" id="travell_detail" value="2 adults, 1 room">
+              <label style="left: 692px;;">Traveller Details</label>
+            </div>
+            <div class="room_detail hide">
+              <ul>
+                <li onclick="setTrevell" class="active">
+                  Couple
+                  <span class="right_text">2 adults, 1 room</span>
+                </li>
+                <li id="familyList">
+                  Family
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </li>
+                <li id="friendList">
+                  Friends
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </li>
+                <li onclick="setTrevell(event)">
+                  solo
+                  <span class="right_text">1 adults, 1 room</span>
+                </li>
+              </ul>
+            </div>
+            <div class="Family_friends hide">
+              <div class="friends_detail">
+                <div class="friends_detail1">
+                  <span class="rrom">Room 1</span>
+                </div>
+                <div class="persons">
+                  <i class="fa fa-minus minu" onclick="decrease_adult(event)"aria-hidden="true"></i>
+                  <input id="incre_ad" class="input_in" value="2">
+                  <i class="fa fa-plus minu" onclick="increase_adult(event)"aria-hidden="true"></i>
+                </div>
+                <div class="persons">
+                  <i class="fa fa-minus minu" onclick="decrease_child(event)" id="decreaseChild" aria-hidden="true"></i>
+                  <input id="incre" class="input_in" value="0">
+                  <i class="fa fa-plus minu" onclick="increase_child(event)" id="increaseChild" aria-hidden="true"></i>
+                </div>
+                <div class="room_d">
+                  <span class="remove_room">
+                    <i class="fa fa-minus" aria-hidden="true"></i> &nbsp; Delete Room
+                  </span>
+                  <span class="add_room">
+                    <i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add Room
+                  </span>
+                </div>
+                <div class="result">
+                  <a href="#" class="anchor_left">Cancel</a>
+                  <a href="#" class="anchor_right">Done</a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="butt">
+            <a href="maldives_next.html"><button class="btn btnn">Search for Packages</button></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="flash_deal">
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <strong><i class="fa fa-bolt fa-3x flash" aria-hidden="true"></i>
+            Flash Deals
+          </strong>
+          <p>Limited-time discounts on luxury resorts to add more charm to your island getaway</p>
+
+        </div>
+        <div class="col-md-6">
+          <div class="recard">
+            <a href="/coco-bodu-hithi-maldives-resort" target=_blank>
+              <img class="main-card" src="./images/CocoBoduHithi1.jpg"></a>
+          </div>
+          <p>Coco Bodu Hithi</p>
+          <ul class="status">
+            <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel</li>
+          </ul>
+          <div class="bottom">
+            <b class="price">2,27,370 <span style="display: inline-block; padding-left:4px;">for 3 nights</span></b>
+            <span>Starting price/couple</span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="recard">
+                <a target="_blank" href="/sun-siyam-olhuveli-maldives-resort">
+                  <img class="main-card1" src="./images/CocoBoduHithi.jpg"></a>
+                </a>
+              </div>
+              <p>Sun sun_shiyam_olhuveli</p>
+              <ul class="status">
+                <li>4 <i class="fa fa-star" aria-hidden="true"></i> hotel</li>
+              </ul>
+              <div class="bottom">
+                <b class="price">1,60,130 <span style="display: inline-block; padding-left:4px;">for 3 nights</span></b>
+                <span>Starting price/couple</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="recard">
+                <a target="_blank" href="/sun-siyam-olhuveli-maldives-resort">
+                  <img class="main-card1" src="./images/Cocogiribanner2.jpg"></a>
+                </a>
+              </div>
+              <p>Cocogiri Island Resort Maldives</p>
+              <ul class="status">
+                <li>4.5 <i class="fa fa-star" aria-hidden="true"></i> hotel</li>
+              </ul>
+              <div class="bottom">
+                <b class="price">1,73,698 <span style="display: inline-block; padding-left:4px;">for 3 nights</span></b>
+                <span>Starting price/couple</span>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="recard">
+                  <a target="_blank" href="/sun-siyam-olhuveli-maldives-resort">
+                    <img class="main-card1" src="./images/WaterVilla-06.jpg"></a>
+                  </a>
+                </div>
+                <p>OBLU XPERIENCE Ailafushi</p>
+                <ul class="status">
+                  <li>4 <i class="fa fa-star" aria-hidden="true"></i> hotel</li>
+                </ul>
+                <div class="bottom">
+                  <b class="price">1,60,130 <span style="display: inline-block; padding-left:4px;">for 3
+                      nights</span></b>
+                  <span>Starting price/couple</span>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="recard">
+                  <a target="_blank" href="/sun-siyam-olhuveli-maldives-resort">
+                    <img class="main-card1" src="./images/Riu_Palace.jpeg"></a>
+                  </a>
+                </div>
+                <p>RIU Place Maldivas-All Inclusive</p>
+                <ul class="status">
+                  <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel</li>
+                </ul>
+                <div class="bottom">
+                  <b class="price">2,18,617 <span style="display: inline-block; padding-left:4px;">for 3
+                      nights</span></b>
+                  <span>Starting price/couple</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <div class="next_flash">
+    <div class="container">
+      <section>
+        <div class="row">
+          <h2>Honeymoon Friendly</h2>
+        </div>
+        <div class="row">
+          <div class="honey">
+            <p>Experience luxury and comfort with your special one in the tropical honeymoon resorts in the Maldives</p>
+          </div>
+
+          <div class="view_resorts">
+            <a href="#">VIEW ALL RESORTS <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="col-item">
+                <div class="photo">
+                  <img src="./images/honey1.jpg" alt="a" />
+                </div>
+
+                <p>Centara Ras Fushi Resort & Spa...</p>
+                <ul class="status">
+                  <li>4.5 <i class="fa fa-star" aria-hidden="true"></i> hotel . 356 bookings . <span
+                      style="color: #ef435d!important; font-weight: 700;">In high demand</span></li>
+                </ul>
+                <div class="bottom">
+                  <b class="price">1,77,400 <span
+                      style="display: inline-block; padding-left:4px;"><del>2,08,706</del>></span></b>
+                  <span>Starting price/couple</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="col-item">
+                <div class="photo">
+                  <img src="./images/honey2.jpg" alt="a" />
+                </div>
+
+                <p>Paradise Island Resort & Spa</p>
+                <ul class="status">
+                  <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel . 350 bookings . <span
+                      style="color: #7d42a1!important;">Booked 3 hrs ago</span></li>
+                </ul>
+                <div class="bottom">
+                  <b class="price">1,38,852 <span
+                      style="display: inline-block; padding-left:4px;"><del>1,63,355</del>></span></b>
+                  <span>Starting price/couple</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="col-item">
+                <div class="photo" style="text-align: center;">
+                  <img style="border-radius: 50%; width: 75%;" src="./images/honey3.jpg" alt="a" />
+                </div>
+
+                <p class="cen">Pallavi</p>
+                <ul class="status cen">
+                  <li>Honeymoon trip</li>
+                </ul>
+                <p class="cen" style="margin-bottom: 0px;">We love a bit of o...</p>
+                <ul class="status cen" style="color: #ff2872;">
+                  <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
+                    class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
+                    class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="col-item">
+                <div class="photo">
+                  <img src="./images/honey4.jpeg" alt="a" />
+                </div>
+
+                <p>Makunudu Island</p>
+                <ul class="status">
+                  <li>4 <i class="fa fa-star" aria-hidden="true"></i> hotel . 322 bookings</li>
+                </ul>
+                <div class="bottom">
+                  <b class="price">1,30,541 <span
+                      style="display: inline-block; padding-left:4px;"><del>1,53,578</del>></span></b>
+                  <span>Starting price/couple</span>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <div class="next_flash">
+            <div class="container">
+              <section>
+                <div class="row">
+                  <h2>Best Overwater Villa </h2>
+                </div>
+                <div class="row">
+                  <div class="honey">
+                    <p>Spend your days resting in a spacious suite overlooking the vast ocean as you capture
+                      Instagram-worthy moments</p>
+                  </div>
+
+                  <div class="view_resorts1">
+                    <a href="#">VIEW ALL RESORTS <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- <div class="row">
+                    <div class="col-md-3">
+                      <div class="controls pull-right hidden-xs">
+                        <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                          data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success"
+                          href="#carousel-example" data-slide="next"></a>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <div class="col-item">
+                              <div class="photo">
+                                <img src="./images/villa1.webp" alt="a" />
+                              </div>
+
+                              <p>Sun Siyam Iru Veli</p>
+                              <ul class="status">
+                                <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel . 162 bookings</li>
+                              </ul>
+                              <div class="bottom">
+                                <b class="price">2,93,551 <span
+                                    style="display: inline-block; padding-left:4px;"><del>3,45,354</del>></span></b>
+                                <span>Starting price/couple</span>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="col-item">
+                              <div class="photo">
+                                <img src="./images/villa2.jpeg" alt="a" />
+                              </div>
+                              <p>Robinson Club Noonu-All Inclusive</p>
+                              <ul class="status">
+                                <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel . 170 bookings</li>
+                              </ul>
+                              <div class="bottom">
+                                <b class="price">2,18,617 <span
+                                    style="display: inline-block; padding-left:4px;"><del>3,02,195</del></span></b>
+                                <span>Starting price/couple</span>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="col-item">
+                              <div class="photo" style="text-align: center;">
+                                <img style="border-radius: 50%; width: 75%;" src="./images/villa3.jpg" alt="a" />
+                              </div>
+                              <p class="cen">Kaushik</p>
+                              <ul class="status cen">
+                                <li>Honeymoon trip</li>
+                              </ul>
+                              <p class="cen" style="margin-bottom: 0px;">The surprise goodies th...</p>
+                              <ul class="status cen" style="color: #ff2872;">
+                                <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                  aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
+                                  class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                  aria-hidden="true"></i>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-3">
+                            <div class="col-item">
+                              <div class="photo">
+                                <img src="./images/villa4.jpeg" alt="a" />
+                              </div>
+                              <p>RIU Palace Maldives-All Inclusive</p>
+                              <ul class="status">
+                                <li>5 <i class="fa fa-star" aria-hidden="true"></i> hotel . 452 bookings . <span
+                                    style="color: #ef435d!important; font-weight: 700;">In high demand</span></li>
+                              </ul>
+                              <div class="bottom">
+                                <b class="price">2,18,617 <span
+                                    style="display: inline-block; padding-left:4px;"><del>2,57,197</del></span></b>
+                                <span>Starting price/couple</span>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="col-md-12">
+        <div class="info_box">
+          <strong>What’s your budget per person for this trip?</strong>
+          <ul id="budget_info" class="budget">
+            <li>
+              <button type="button" class="btn btn-link show"><span> Below ₹ 50k</span></button>
+            </li>
+            <li><button type="button" class="btn btn-link show"><span> ₹ 50k - ₹ 70k</span></button>
+            </li>
+            <li><button type="button" class="btn btn-link show"><span> ₹ 70k - ₹ 80k</span></button>
+            </li>
+            <li><button type="button" class="btn btn-link show"><span> Above ₹ 80k</span></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <footer class="foot_div">
+    <div class="footer1">
+      <h6 class="head6">Themed destinations</h6>
+      <a href="#">Honeymoon Packages</a> .
+      <a href="#">Family Packages</a> .
+      <a href="#">Beach Packages</a> .
+      <a href="#">Adventure Packages</a> .
+      <a href="#">Summer Holiday Packages</a> .
+      <a href="#">Visa on arrival</a>
+
+    </div>
+    <hr>
+    <div class="footer1">
+      <h6 class="head6">Holiday destinations</h6>
+      <a href="#">Australia Packages</a> .
+      <a href="#">Europe Packages</a> .
+      <a href="#">Dubai Tour Packages</a> .
+      <a href="#">New Zealand Packages</a> .
+      <a href="#">Singapore Packages</a> .
+      <a href="#">Thailand Tour Packages</a> .
+      <a href="#">Bali Packages</a> .IN
+      <a href="#">Maldives Packages</a> .
+      <a href="#">Seychelles Packages</a> .
+      <a href="#">Malaysia Packages</a> .
+      <a href="#">South Africa Packages</a> .
+      <a href="#">Cambodia Packages</a> .
+      <a href="#">USA Packages</a> .
+      <a href="#">Sri Lanka Tour Packages</a> .
+      <a href="#">Bangkok Tour Packages</a>
+
+    </div>
+    <hr>
+    <div class="footer1">
+      <h6 class="head6">Europe Specials</h6>
+      <a href="#">France Tour Packages</a> .
+      <a href="#">Italy Tour Packages</a> .
+      <a href="#">Austria Tour Packages</a> .
+      <a href="#">New Zealand Packages</a> .
+      <a href="#">Switzerland Tour Packages</a> .
+      <a href="#">Germany Tour Packages</a> .
+      <a href="#">Greece Tour Packages</a> .
+      <a href="#">Spain Tour Packages</a> .
+      <a href="#">UK Tour Packages</a> .
+      <a href="#">Europe Honeymoon Packages</a> .
+      <a href="#">Turkey Tour Packages</a> .
+      <a href="#">London Tour Packages</a> .
+      <a href="#">Croatia Tour Packages</a> .
+      <a href="#">Amsterdam Tour Packages</a> .
+      <a href="#">Iceland Tour Packages</a> .
+      <a href="#">Paris Tour Packages</a> .
+      <a href="#">Czech Republic Tour Packages</a> .
+      <a href="#">Paris Switzerland Italy Tour Packages</a> .
+      <a href="#">Norway Tour Packages</a> .
+      <a href="#">Finland Tour Packages</a> .
+      <a href="#">Denmark Tour Packages</a> .
+      <a href="#">Eastern Europe Tour Packages</a> .
+      <a href="#">Central Europe Tour Packages</a> .
+      <a href="#">Prague Vienna Budapest Tour Packages</a> .
+      <a href="#">Portugal Tour Packages</a>
+    </div>
+    <hr>
+    <div class="footer1">
+      <h6 class="head6">Honeymoon Packages</h6>
+      <a href="#">Maldives Honeymoon Packages</a> .
+      <a href="#">Dubai Honeymoon Packages</a> .
+      <a href="#">Mauritius Honeymoon Packages</a> .
+      <a href="#">Switzerland Honeymoon Packages</a> .
+      <a href="#">Greece Honeymoon Packages</a> .
+      <a href="#">Turkey Honeymoon Packages</a> .
+      <a href="#">Sri Lanka Honeymoon Packages</a> .
+      <a href="#">Bali Honeymoon Packages</a> .
+      <a href="#">Italy Honeymoon Packages</a> .
+      <a href="#">Spain Honeymoon Packages</a> .
+      <a href="#">Seychelles Honeymoon Packages</a> .
+      <a href="#">Thailand Honeymoon Packages</a> .
+      <a href="#">Singapore Honeymoon Packages</a> .
+      <a href="#">France Honeymoon Packages</a> .
+      <a href="#">Paris Honeymoon Packages</a> .
+      <a href="#">Iceland Honeymoon Packages</a> .
+    </div>
+    <hr>
+    <div class="last_foot">
+      <div class="last_foot1">
+        <h6 class="head6">Pickyourtrail</h6>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Visa</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="last_foot1">
+        <h6 class="head6">Policy</h6>
+        <ul>
+          <li><a href="#">Frequently Asked Questions</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cancellations</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="last_foot1">
+        <h6 class="head6">Talk to us</h6>
+        <div class="large">
+          <a href="#">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> Planners@pickyourtrail.com
+          </a>
+          <a href="#">
+            <i class="fa fa-phone" aria-hidden="true"></i> +919360991166
+
+          </a>
+          <a href="#">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i> +917806805380
+
+          </a>
+        </div>
+        <h6 class="head6" style="margin-top: 8%;">Sign up for travel ideas!</h6>
+        <div class="ideas">
+          <form>
+            <input type="email" placeholder="Your email" id="inn" data-focusvisible-polyfill="true">
+            <button type="submit" class="btn btn-primary" id="emailbtn">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="last_foot1">
+        <h6 class="head6">Social</h6>
+        <span class="footer_span">
+          <a class="span_a" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="span_a" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="span_a" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="span_a" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </span>
+        <p class="footer_para">Travel Troops Global Private Ltd.<br>
+          © 2022 all rights reserved.| For details +91 9884529921</p>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-footer">
+          <button style="background-color: white; float:right;"type="button" class="btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body" style="width: 100%;">
+        <div class="right_aside">
+          <div class="header_text">
+            <h5 class="heading">Welcome to </h5><i style="color: rgb(0, 198, 132);" class="fa fa-flag" aria-hidden="true"></i> Pickyourtrail
+            <p class="header_para">Create and customize itineraries catering to your best interests</p>
+            <form>
+              <input class="form-control modalInput" placeholder="Enter Email/Mobile No.">
+              <br>
+              <input class="form-control modalInput" placeholder="Password">
+              <br>
+              <button type="submit" class="btn btn-primary btn-block btn-lg headerButton">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="java.js"></script>
+</body>
+
+</html>

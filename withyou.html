@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="java4withyou.js"></script>
+  <title>Plan a Vaccation</title>
+</head>
+
+<body>
+
+  <div class="swit_submain">
+    <div class="text_div">
+      <b>PLANNING YOUR TRIP TO</b>
+    </div>
+    <div class="switzerland">
+      <div>
+        <span id="desti"></span>
+        <span id="test"></span>
+        <span id="duration"></span>
+      </div>
+
+      <a target="_self" href="/">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="progress_div">
+      <span class="yellow"></span>
+      <span class="yellow"></span>
+      <span class="yellow"></span>
+      <span class="grey"></span>
+      <span class="grey"></span>
+    </div>
+    <section class="when_to">
+      <h1>Who is travelling with you?</h1>
+    </section>
+    <div class="travelling">
+      <div class="stay_travelling">
+        <div>
+          <label onclick="pageRedirect('Couple')">
+            <span class="travel"><img width="100" src="./images/couple.png"></span>
+            <p>Couple</p>
+          </label>
+
+        </div>
+      </div>
+      <div class="stay_travelling">
+        <div type="button"
+          style="background: transparent; border:1px solid white; color: white; border-radius: 7px; width: 80px"
+          class="btn" data-toggle="modal" data-target="#exampleModal">
+          <label>
+            <span class="travel"><img width="100" src="./images/family.png"></span>
+            <p>Family</p>
+          </label>
+
+        </div>
+      </div>
+      <div class="stay_travelling">
+        <div type="button"
+          style="background: transparent; border:1px solid white; color: white; border-radius: 7px; width: 80px"
+          class="btn" data-toggle="modal" data-target="#exampleModal1">
+          <label>
+            <span class="travel"><img width="100" src="./images/friends.png"></span>
+            <p>Friends</p>
+          </label>
+
+        </div>
+      </div>
+      <div class="stay_travelling">
+        <div>
+          <label onclick="pageRedirect('Solo')">
+            <span class="travel"><img width="100" src="./images/solo.png"></span>
+            <p>Solo</p>
+          </label>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" style="width: 100%;">
+          <div class="Family_friends1">
+            <div class="friends_detail1">
+              <span style="font-size: 16px;">Room</span><input id="rrom" value="1"></input>
+            </div>
+            <div class="persons">
+              <i class="fa fa-minus minu" onclick="decrease_adult(event)" aria-hidden="true"></i>
+              <input id="incre_ad" class="input_in1" value="2"><span style="font-size: 16px; 
+              margin-right: 150px;">Adult</span>
+              <i class="fa fa-plus minu" onclick="increase_adult(event)" aria-hidden="true"></i>
+            </div>
+            <div class="persons">
+              <i class="fa fa-minus minu" onclick="decrease_child(event)" aria-hidden="true"></i>
+              <input id="incre" class="input_in1" value="0"><span style="font-size: 16px; 
+              margin-right: 150px;">Child</span>
+              <i class="fa fa-plus minu" onclick="increase_child(event)" aria-hidden="true"></i>
+            </div>
+            <div class="room_d">
+              <span class="remove_room" onclick="deleteRoom(event)">
+                <i class="fa fa-minus" aria-hidden="true"></i> &nbsp; Delete Room
+              </span>
+              <span class="add_room" onclick="addRoom(event)">
+                <i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add Room
+              </span>
+            </div>
+            <div class="result">
+
+              <button class="anchor_left1" data-dismiss="modal">Close</button>
+              <button class="anchor_right1" onclick="family()">Done</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" style="width: 100%;">
+          <div class="Family_friends1">
+            <div class="friends_detail1">
+              <span style="font-size: 16px;">Room</span><input id="friendRoom1" value="1"></input>
+            </div>
+            <div class="persons">
+              <i class="fa fa-minus minu" onclick="friendAdultDec(event)" aria-hidden="true"></i>
+              <input id="friendAdd" class="input_in1" value="2"><span style="font-size: 16px; 
+              margin-right: 150px;">Adult</span>
+              <i class="fa fa-plus minu" onclick="friendAdultInc(event)" aria-hidden="true"></i>
+            </div>
+            <div class="persons">
+              <i class="fa fa-minus minu" onclick="friendChidDec(event)" aria-hidden="true"></i>
+              <input id="friendchild" class="input_in1" value="0"><span style="font-size: 16px; 
+              margin-right: 150px;">Child</span>
+              <i class="fa fa-plus minu" onclick="friendChildInc(event)" aria-hidden="true"></i>
+            </div>
+            <div class="room_d">
+              <span class="remove_room" onclick="removeRoom(event)">
+                <i class="fa fa-minus" aria-hidden="true"></i> &nbsp; Delete Room
+              </span>
+              <span class="add_room" onclick="extendRoom(event)">
+                <i class="fa fa-plus" aria-hidden="true"></i> &nbsp; <span>Add Room</span>
+              </span>
+            </div>
+            <div class="result">
+
+              <button class="anchor_left1" data-dismiss="modal">Close</button>
+              <button class="anchor_right1" onclick="friend()">Done</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
