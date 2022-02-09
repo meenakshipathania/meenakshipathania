@@ -1039,6 +1039,7 @@ hr{
 .swit_submain{
     margin: 0px 25%;
     padding: 90px 0px 65px;
+    max-width: 100%;
 }
 .text_div{
         margin-bottom: 8px;
@@ -1053,7 +1054,7 @@ hr{
 .switzerland div{
     letter-spacing: -0.39px;
     font-weight: 700;
-    width: 816px
+    /* width: 816px */
 }
 .switzerland div span{
     padding: 8px;
@@ -1132,20 +1133,14 @@ span a:hover{
 .when_to a:hover{
     text-decoration: none;
 }
-.months_chart {
+/* .months_chart {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-}
+} */
 .innerMonths{
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    user-select: none;
     padding: 4px;
-    text-align: center;
+    justify-content: flex-start;
 }
 .tick{
     position: absolute;
@@ -1162,12 +1157,7 @@ span a:hover{
     height: 100%;
 }
 .same{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
     width: 33%;
-    position: relative;
-    user-select: none;
     padding: 4px;
     text-align: center;
 }
@@ -1175,15 +1165,9 @@ span a:hover{
 .same div label{
     padding: 26px 8px;
     position: relative;
-    display: block;
-    width: 100%;
-    font-weight: 400;
-    margin: 0px;
-    cursor: pointer;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(100, 121, 143, 0.12);
     border-radius: 8px;
-    background-clip: padding-box;
 }
 .same div label:hover{
     transform: translateY(5px);
@@ -1236,12 +1220,14 @@ span a:hover{
 
 
 /* when Page CSS */
+
 .softcard {  
-    width: 500px;
+    width: 466px;
     height: fit-content;
     box-shadow: 0px 0px 10px #000;
     margin-left: 16%;
     padding: 1px 75px;
+    max-width: 100%;
 }
 
 .calendar-bar {  
@@ -1305,6 +1291,11 @@ transition: 0.1s;  cursor: pointer;
 
 
 /* SwitForm2 Page CSS*/
+.swit_submain3{
+    margin: 0px 25%;
+    padding: 90px 0px 65px;
+    max-width: 100%;
+}
 .duration{
     display: flex;
 }
@@ -1379,7 +1370,11 @@ transition: 0.1s;  cursor: pointer;
 }
 
 /* switForm3 CSS */
-
+.swit_submain1{
+    margin: 0px 25%;
+    padding: 90px 0px 65px;
+    max-width: 100%;
+}
 .travelling{
     display: flex;
 }
@@ -1413,6 +1408,7 @@ transition: 0.1s;  cursor: pointer;
     height: 110px;
     margin-top: 12px;
     border-radius: 50%;
+    max-width: 100%;
    
 }
 
@@ -1485,6 +1481,11 @@ transition: 0.1s;  cursor: pointer;
 
 
 /* todo CSS */
+.swit_submain2{
+    margin: 0px 25%;
+    padding: 90px 0px 65px;
+    max-width: 100%;
+}
 
 .todo{
     display: flex;
@@ -1598,7 +1599,7 @@ transition: 0.1s;  cursor: pointer;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
-    line-height: 14px;
+    line-height: 19%x;
     color: rgb(170, 170, 170);
 }
 .facebook p i{
@@ -1612,9 +1613,13 @@ transition: 0.1s;  cursor: pointer;
 
 
  /* Done CSS */
-
+ .swit_submain4{
+    margin: 0px 25%;
+    padding: 90px 0px 65px;
+    max-width: 100%;
+}
 .Submit_form {
-    width: 564px;
+    width: 100%;
     margin: 25px auto;
 }
 .name_input{
@@ -1662,4 +1667,277 @@ transition: 0.1s;  cursor: pointer;
 }
 
 
- 
+
+
+/* index Page responsive code */
+@media screen and (max-width: 1100px) {
+    .form_class {
+        width: 120%;
+        margin-left: 17%;
+    }
+    .formcontent {
+        margin-left: 16%; 
+        margin-right: 16%;
+    }
+   
+}
+@media screen and (max-width: 920px) {
+    .form_class {
+        width: 143%;
+        margin-left: 10%;
+    }
+    .formcontent {
+        margin-left: 8%; 
+        margin-right: 8%;
+    }
+   
+}
+@media screen and (max-width: 768px) {
+    .form_class{
+        margin-left: 3%;
+        width: 170%;
+    }
+    .formcontent {
+        margin-left: 0%; 
+        margin-right: 0%;
+    }
+    .content1 {
+        border-bottom: none;
+    }
+  
+    
+}
+@media screen and (max-width: 640px) {
+    .inp {
+        font-size: 20px;
+    }
+    .form_class{
+        width: 165%;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    .inp {
+        font-size: 16px;
+    }
+    .form_class{
+        width: 155%;
+    }
+   
+}
+
+@media screen and (max-width: 340px) {
+    .inp {
+        font-size: 13px;
+    }
+    .form_class {
+        width: 148%;
+    }
+    
+} 
+
+
+
+
+/* Switzerland.html Page responsive code */
+@media screen and (max-width: 1200px) {
+    .swit_submain {
+        margin: 0px 20%;
+    } 
+   
+}
+@media screen and (max-width: 1100px) {
+    .swit_submain {
+        margin: 0px 17%;
+    } 
+   
+}
+@media screen and (max-width: 1024px) {
+    .swit_submain {
+        margin: 0px 13%;
+    } 
+   
+}
+@media screen and (max-width:920px) {
+    .swit_submain {
+        margin: 0px 10%;
+    }
+   
+}
+@media screen and (max-width:768px) {
+
+    .swit_submain {
+        margin: 0px 8%;
+    }
+   
+}
+
+
+
+
+
+
+
+/* when page responsive code */
+
+@media screen and (max-width:768px) {
+
+    .swit_submain {
+        margin: 0px 8%;
+    }
+
+}
+@media screen and (max-width:640px) {
+
+    .softcard{
+        margin-left: 8%;
+    }
+
+}
+@media screen and (max-width:560px) {
+
+    .softcard{
+        margin-left: 0%;
+        padding: 1px 74px;
+        max-width: 100%;
+        }
+        .weekdays-name, .calendar-days{
+            padding-inline: 0px;
+        }
+}
+
+@media screen and (max-width:540px) {
+
+    .softcard{
+        margin-left: 0%;
+        padding: 1px 42px;
+        max-width: 100%;
+        }
+        .weekdays-name, .calendar-days{
+            padding-inline: 0px;
+        }
+}
+@media screen and (max-width: 414px){
+    .softcard{
+    padding: 1px 33px;
+    margin-left: 0px;
+    max-width: 100%;
+    }
+    .weekdays-name, .calendar-days{
+        padding-inline: 0px;
+    }
+      
+}
+@media screen and (max-width: 375px){
+    .swit_submain {
+        margin: 0px 5%;
+    }
+    .softcard {
+        padding: 1px 28px;
+        margin-left: 0px;
+        max-width: 100%;
+    }
+  
+
+}
+@media screen and (max-width: 320px){
+    .swit_submain {
+        margin: 0px 5%;
+    }
+    .softcard{
+        padding: 0px 4px;
+    }
+  
+}
+
+/* withyou page responsive code */
+@media screen and (max-width: 840px){
+    .swit_submain1 {
+        margin: 0px 14%;
+     
+    }
+  
+}
+@media screen and (max-width: 480px){
+    .travel{
+        height: 80px;
+    }
+    .swit_submain1 {
+        margin: 0px 6%;
+     
+    }
+   
+}
+@media screen and (max-width: 375px){
+.swit_submain1 {
+    margin: 0px 2%;
+}
+}
+@media screen and (max-width: 320px){
+    .tra_img{
+        width: 50px;
+    }
+    }
+
+
+/* todo page responsive code */
+@media screen and (max-width: 1024px){
+    .swit_submain2{
+        margin: 0px 9%;
+    }
+    }
+@media screen and (max-width:620px) {
+    .stay_travelling div label p {
+        font-size: 10px;
+    }
+    
+    
+}
+@media screen and (max-width:480px) {
+    .swit_submain2{
+        margin: 0px 3%;
+    }
+    
+}
+
+/* done page responsive code */
+@media screen and (max-width:980px){
+    .swit_submain4 {
+        margin: 0px 14%;
+    }
+    .switzerland div span {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:840px){
+    .swit_submain4 {
+        margin: 0px 14%;
+    }
+}
+@media screen and (max-width:768px){
+    .swit_submain4 {
+        margin: 0px 14%;
+    }
+}
+@media screen and (max-width:480px){
+    .swit_submain4 {
+        margin: 0px 6%;
+    }
+}
+@media screen and (max-width:375px){
+    .swit_submain4 {
+        margin: 0px 2%;
+    }
+}
+@media screen and (max-width:320px){
+    .swit_submain4 {
+        margin: 0px 2%;
+    }
+    .switzerland i {
+        top: -10px;
+    }
+    .switzerland div span {
+        padding: 4px;
+    }
+}
