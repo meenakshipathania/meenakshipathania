@@ -274,24 +274,6 @@ video{
 .iconclass1 {
     border-left: 1px solid grey;
 }
-label{
-    position: absolute;
-    left: 26px;
-    top: -8px;
-    margin-top: -10px;
-    line-height: 20px;
-    padding: 0px 8px;
-    z-index: 5;
-    transition: all 0.3s ease 0s;
-    margin-bottom: 0px;
-    transform: translate(0px, 20px);
-    font-size: 10px;
-    letter-spacing: -0.3px;
-    color: rgb(119, 119, 119);
-    font-weight: 500;
-    display: inline-block;
-    max-width: 100%;
-}
 .btnn{
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -1131,11 +1113,10 @@ span a:hover{
 
 .same div label{
     padding: 26px 8px;
-    left: 0px;
-    position: relative;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(100, 121, 143, 0.12);
     border-radius: 8px;
+    min-height: 160px;
 }
 .same div label:hover{
     transform: translateY(5px);
@@ -1291,9 +1272,6 @@ transition: 0.1s;  cursor: pointer;
     padding: 8px;
     border: 1px solid rgba(100, 121, 143, 0.12);
     border-radius: 8px;
-    position: relative;
-    margin-top: 0px;
-    left: 0px;
 }
 .stay_duration div label:hover{
     transform: translateY(5px);
@@ -1442,8 +1420,7 @@ transition: 0.1s;  cursor: pointer;
     padding: 8px;
     border: 1px solid rgba(100, 121, 143, 0.12);
     border-radius: 8px;
-    left: 0px;
-    position: relative;
+
 }
 .stay_travelling div label:hover{
     transform: translateY(5px);
