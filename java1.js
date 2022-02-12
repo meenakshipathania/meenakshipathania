@@ -27,7 +27,7 @@ function setCity(value) {
   let head1 = localStorage.getItem('heading1')
   document.getElementById('firstText').innerText = head1
 
-  localStorage.setItem('heading2','Planned') 
+  localStorage.setItem('heading2','Planned?') 
   let head2 = localStorage.getItem('heading2')
   document.getElementById('secondText').innerText = head2
   console.log(document.querySelector('#selectCity'))
