@@ -499,12 +499,18 @@ hr{
     padding: 9px 12px;
     border-radius: 0px 3px 3px 0px;
 }
+#selectCity{
+    color: #1895b3;
+    cursor: pointer;   
+    padding-bottom: 2px;
+    border-bottom: 1px dashed;
+}
 .city_dropdown{
     position: absolute;
-    top: 39px;
+    top: 215px;
+    left: 610px;
     background-color: rgb(255, 255, 255);
     padding: 12px 20px 8px;
-    float: left;
 }
 .city_dropdown::before{
     bottom: 100%;
@@ -576,21 +582,12 @@ hr{
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.city_span{
-    float: right;
-    min-width: 50px;
-    text-align: right;
-    color: rgb(136, 136, 136);
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1.2;
-    letter-spacing: -0.3px;
-}
+
 .city_button{
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 100%;
+    width: 94%;
     padding: 4px;
     background: rgb(255, 255, 255);
     box-shadow: rgb(48 80 89 / 30%) 0px -1px 10px;
@@ -1073,7 +1070,7 @@ span a:hover{
     text-align: center;
     padding: 16px;
 }
-.when_to h1{
+.when_to .sameText{
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;
@@ -1090,6 +1087,16 @@ span a:hover{
 .innerMonths{
     display: flex;
     padding: 4px;
+}
+.city_span{
+    float: right;
+    min-width: 50px;
+    text-align: right;
+    color: rgb(136, 136, 136);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
 }
 .tick{
     position: absolute;
@@ -1146,7 +1153,6 @@ span a:hover{
     border-radius: 12px;
     margin: 6px 0px;
     font-weight: 700;
-    position: relative;
 }
 .issues{
     width: 100%;

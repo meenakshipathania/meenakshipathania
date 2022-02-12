@@ -35,7 +35,67 @@
             <span class="grey"></span>
         </div>
         <section class="when_to">
-            <h1>When are you <a href="#">travelling to</a> <span id="country"></span></h1>
+         <span id="firstText" class="sameText">When are you</span> <span id="selectCity" class="sameText">travelling to</span> <span id="country" class="count sameText "></span> <span class="sameText" id="secondText"></span>
+             
+            <div class="city_dropdown hide">
+                <div class="city_drop">
+                  <div class="input_tag">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="city_input" placeholder="Select City">
+                  </div>
+                  <ul class="city_list ">
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">MAA</span>Chennai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BLR</span>Bengaluru, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BOM</span>Mumbai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CCU</span>Kolkata, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">HYD</span>Hyderabad, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">DEL</span>Delhi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">TRV</span>Trivandrum, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">NAG</span>Nagpur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">JAI</span>Jaipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CJB</span>Coimbatore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">COK</span>Kochi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">TRZ</span>Trichy, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">AMD</span>Ahmedabad, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">ATQ</span>Amritsar, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">LKO</span>Lucknow, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BBI</span>Bhubaneshwar, IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">PNQ</span>Pune, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXM</span>Madurai, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">VNS</span>Varanasi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Goa, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXC</span>Chandigarh, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BDQ</span>Vadodara, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GAU</span>Guwahati, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">VTZ</span>Visakhapatnam, IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXU</span>Aurangabad , IN
+                    </li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXE</span>Mangalore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IDR</span>Indore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">UDR</span>Udaipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXR</span>Ranchi, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">CCJ</span>Kozhikode , IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">RPR</span>Raipur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">PAT</span>Patna, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">JDH</span>Jodhpur, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">BKB</span>Bikaner, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">MYQ</span>Mysore, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Quepem, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">GOI</span>Chimbel, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">DED</span>Dehradun, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">KUU</span>Kullu, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXZ</span>Port Blair, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">IXL</span>Leh, IN</li>
+                    <li class="city_item" onclick="setCity(event)"><span class="city_span">SXR</span>Srinagar, IN</li>
+                  </ul>
+                  <div class="city_button">
+                    <button id="outside" class="button1">I’m departing from Outside India</button>
+                    <button id="already" class="button1">I have booked my flight already</button>
+                  </div>
+                </div>
+              </div>
         </section>
         <div class="innerMonths">
             <div class="feb same" onclick="pageRedirect('monthName1')">
